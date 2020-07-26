@@ -1,0 +1,60 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="about_game"> <img src="/static/img/ac_rouge_screen1.jpg" alt="ac_rouge_screen1" class="big_img">
+        <div class="small_imgs">
+            <ul>
+                <li><img src="{% static 'img/ac_rouge_screen1.jpg' %}" alt="ac_rouge_screen1"></li>
+                <li><img src="{% static 'img/ac_rouge_screen2.jpg' %}" alt="ac_rouge_screen2"></li>
+                <li><img src="{% static 'img/ac_rouge_screen3.jpg' %}" alt="ac_rouge_screen3"></li>
+                <li><img src="{% static 'img/ac_rouge_screen4.jpg' %}" alt="ac_rouge_screen4"></li>
+            </ul>
+        </div>
+        <div class="game_info">
+            <div class="game_title">Assasin’s Creed:
+                <br><span>Rogue</span></div>
+            <p class="cost">&#36;29.99</p>
+            <button>Buy</button>
+            <p class="about_game_text">The plot is set in a fictional history of real world events and follows the centuries-old struggle between the Assassins, who fight for peace with free will, and the Templars, who desire peace through control. The story is set in the mid-18th century during the Seven Years' War, and follows Shay Patrick Cormac, an Assassin-turned-Templar who hunts down former members of his Brotherhood after being betrayed by them. Gameplay in Rogue is very similar to that of Black Flag with a mixture of ship-based naval exploration and third-person land-based exploration with some new features.</p>
+        </div>
+    </div>
+    <div class="similar_games">
+        <p class="section_header">Similar games</p>
+        <div class="store" id="store_product">
+            <ul>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/MIDDLE_EARTH_Shadow_Of_War.jpg' %}" alt="MIDDLE_EARTH_Shadow_Of_War">
+                        <p>MIDDLE-EARTH:
+                            <br>Shadow Of War</p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/DISHONORED_2.jpg' %}" alt="DISHONORED_2">
+                        <p>DISHONORED 2
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/THIEF.jpg' %}" alt="THIEF">
+                        <p>THIEF
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/HITMAN.jpg' %}" alt="HITMAN">
+                        <p>HITMAN
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

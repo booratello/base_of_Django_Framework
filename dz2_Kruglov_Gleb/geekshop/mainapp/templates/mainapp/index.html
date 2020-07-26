@@ -1,0 +1,304 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+    <div class="about">
+        <a name="about"></a>
+        <div class="content"> <img src="{% static 'img/game-art.jpg' %}" alt="game-art">
+            <p class="section_header">About Us!</p>
+            <p class="text_about">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+            <p class="text_about">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+    </div>
+    <div class="services">
+        <a name="serices"></a>
+        <p class="section_header">Services</p>
+        <div class="menu_services">
+            <a href="#">
+                <div class="paragraph left_half">
+                    <div class="serices_circle tree"></div>
+                    <p class="section_services">Repreh Qui In Ea Voluptate</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="paragraph right_half">
+                    <div class="serices_circle arrow-up"></div>
+                    <p class="section_services">Voluptatibus Maiores Alias</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="paragraph left_half">
+                    <div class="serices_circle dollar"></div>
+                    <p class="section_services">Aut Perferendis Doloribus</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="paragraph right_half">
+                    <div class="serices_circle house"></div>
+                    <p class="section_services">Dut Aut Reiciendis Maiores</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="paragraph left_half">
+                    <div class="serices_circle poll"></div>
+                    <p class="section_services">Maiores Alias Consequatur</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="paragraph right_half">
+                    <div class="serices_circle gear"></div>
+                    <p class="section_services">Doloribus Volupta Maiores</p>
+                    <p class="text_services">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="gallery">
+        <a name="gallery"></a>
+        <p class="section_header">Our Gallery</p>
+        <div class="store">
+            <ul>
+                <a href="{% url 'ac_rouge' %}">
+                    <li class="img-div"><img src="{% static 'img/assasins-creed-rouge.jpg' %}" alt="assasins-creed-rouge">
+                        <p>ASSASIN’S CREED: Rogue
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#gallery">
+                    <li class="img-div"><img src="{% static 'img/tomb-raider.jpg' %}" alt="tomb-raider">
+                        <p>TOMB RAIDER
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#gallery">
+                    <li class="img-div"><img src="{% static 'img/ryse-son-of-rome.jpg' %}" alt="ryse-son-of-rome">
+                        <p>RYSE: Son Of Rome
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#gallery">
+                    <li class="img-div"><img src="{% static 'img/WoW-Wrath-Of-The-Linch-King.jpg' %}" alt="WoW-Wrath-Of-The-Linch-King">
+                        <p>WORLD OF WARCRAFT:
+                            <br> Wrath Of The Linch King</p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="slider">
+            <p class="section_header_2">Testimonial</p> <img src="{% static 'img/quotation-marks.png' %}" alt="quotation-marks">
+            <p class="square to-left"><i class="fa fa-2x fa-angle-left"></i></p>
+            <div class="slider-text">Donec feugiat tellus sem, laoreet iaculis orci lobortis vel. Sed sed luctus orci, at lacinia risus. Ut porttitor ante ac tincidunt elementum. Curabitur ex dolor, condimentum vitae nunc vel, pulvinar semper justo. Vestibulum et aliquet magna, maximus dapibus enim. Vestibulum ex lectus, posuere eu viverra at, mattis et enim. Nam efficitur sem et lectus fringilla, at pharetra nulla luctus. Nunc cursus, augue ac ultricies volutpat, neque erat congue justo, ac pretium tellus eros a neque. Integer ipsum sem,
+                <br> consectetur a mollis ac, cursus eu ipsum.
+                <br>
+                <br> <span class="name">JOHN SMITH</span> <span class="title"> - FOUNDER</span> </div>
+            <p class="square to-right"><i class="fa fa-2x fa-angle-right"></i></p>
+        </div>
+    </div>
+    <div class="news">
+        <a name="news"></a>
+        <p class="section_header">News & Events</p>
+        <div class="lasted_news">
+            <p class="news_header">Latest News</p>
+            <ul class="ul_news">
+                <li>
+                    <a href="#">
+                        <div class="ellipse">
+                            <p class="date">15</p>
+                            <p class="month">June</p>
+                            <p class="year">2016</p>
+                        </div>
+                    </a>
+                    <p class="news_text_title">Fugiat Quo Voluptas</p>
+                    <p class="news_text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ellipse">
+                            <p class="date">18</p>
+                            <p class="month">June</p>
+                            <p class="year">2016</p>
+                        </div>
+                    </a>
+                    <p class="news_text_title">FugQui In Ea Voluptate</p>
+                    <p class="news_text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ellipse">
+                            <p class="date">20</p>
+                            <p class="month">June</p>
+                            <p class="year">2016</p>
+                        </div>
+                    </a>
+                    <p class="news_text_title">Autem Vel Eum Iure</p>
+                    <p class="news_text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="featured_events">
+            <p class="news_header">Featured Events</p>
+            <button class="switch_left">&lt;</button>
+            <button class="switch_right">&gt;</button>
+            <hr>
+            <ul class="game-arts">
+                <li><img src="{% static 'img/game-art-1.jpg' %}" alt="game-art-1"></li>
+                <li><img src="{% static 'img/game-art-2.jpg' %}" alt="game-art-2"></li>
+                <li><img src="{% static 'img/game-art-3.jpg' %}" alt="game-art-3"></li>
+            </ul>
+            <input class="accordion" id="ac-1" type="checkbox">
+            <label for="ac-1">Assumenda Est Cliche Reprehenderit</label>
+            <div class="accordion-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <input class="accordion" id="ac-2" type="checkbox">
+            <label for="ac-2">Assumenda Est Cliche Reprehenderit</label>
+            <div class="accordion-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <input class="accordion" id="ac-3" type="checkbox">
+            <label for="ac-3">Assumenda Est Cliche Reprehenderit</label>
+            <div class="accordion-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <input class="accordion" id="ac-4" type="checkbox">
+            <label for="ac-4">Assumenda Est Cliche Reprehenderit</label>
+            <div class="accordion-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        </div>
+    </div>
+    <div class="team">
+        <a name="team"></a>
+        <p class="section_header">Our Team</p>
+        <div class="people">
+            <ul>
+                <li>
+                    <div class="person"> <img src="{% static 'img/t1.jpg' %}" alt="t1">
+                        <p class="person_name">Mary Jane</p>
+                        <p class="profession">Vestibulum</p>
+                        <ul class="person_contacts">
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 facebook"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 twitter"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 rss"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 vkontakte"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="person"> <img src="{% static 'img/t2.jpg' %}" alt="t2">
+                        <p class="person_name">Peter Parker</p>
+                        <p class="profession">Vestibulum</p>
+                        <ul class="person_contacts">
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 facebook icon"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 twitter"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 rss"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 vkontakte"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="person"> <img src="{% static 'img/t3.jpg' %}" alt="t3">
+                        <p class="person_name">John Watson</p>
+                        <p class="profession">Vestibulum</p>
+                        <ul class="person_contacts">
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 facebook"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 twitter"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 rss"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 vkontakte"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="person"> <img src="{% static 'img/t4.jpg' %}" alt="t4">
+                        <p class="person_name">Steven Wilson</p>
+                        <p class="profession">Vestibulum</p>
+                        <ul class="person_contacts">
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 facebook"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 twitter"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 rss"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="square_2 vkontakte"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <p class="section_header_2">Subscribe with Us</p>
+            <input type="text" placeholder="Email">
+            <input type="button" value="Subscribe"> </div>
+    </div>
+{% endblock %}
+
