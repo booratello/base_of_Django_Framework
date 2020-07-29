@@ -1,0 +1,106 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="our_gallery">
+        <p class="section_header">Our Gallery</p>
+        <div class="store">
+            <ul>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/BATTLEFIELD_1.jpg' %}" alt="BATTLEFIELD_1">
+                        <p>BATTLEFIELD 1
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/STAR_WARS_Battlefront_II.jpg' %}" alt="/STAR_WARS_Battlefront_II">
+                        <p>STAR WARS
+                            <br>Battlefront_I </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/BATTLEFIELD_4.jpg' %}" alt="BATTLEFIELD_4">
+                        <p>BATTLEFIELD 4
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/WORLD_OF_TANKS.jpg' %}" alt="WORLD_OF_TANKS">
+                        <p>WORLD OF TANKS
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="store">
+            <ul>
+                <a href="{% url 'ac_rouge' %}">
+                    <li class="img-div"><img src="{% static 'img/assasins-creed-rouge.jpg' %}" alt="assasins-creed-rouge">
+                        <p>ASSASIN’S CREED:
+                            <br>Rogue</p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/FOR_HONOR.jpg' %}" alt="FOR_HONOR">
+                        <p>FOR HONOR
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/WORLD_OF_WARSHIPS.jpg' %}" alt="WORLD_OF_WARSHIPS">
+                        <p>WORLD OF WARSHIPS
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="img-div"><img src="{% static 'img/CALL_OF_DUTY_Infinite_Warface.jpg' %}" alt="CALL_OF_DUTY_Infinite_Warface">
+                        <p>CALL OF DUTY:
+                            <br>Infinite Warface</p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <a href="#">
+            <button class="more">Show more games </button>
+        </a>
+    </div>
+    <div class="big_banner">
+        <div class="banner">
+            <div class="banner_text">
+                <p class="banner_game_discount">DISCOUNT</p>
+                <p class="banner_game_name">CALL OF DUTY:
+                    <br>Modern Warfare 3</p>
+                <p class="banner_game_cost">$14.44 <span>/</span> <span class="cross_out">&#36;28.90</span></p>
+                <a href="#">
+                    <button class="banner_game_button">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="banner" id="second_banner">
+            <div class="white_bgd">
+                <div class="banner_text">
+                    <p class="banner_game_discount">DISCOUNT</p>
+                    <p class="banner_game_name">MEDAL OF HONOR
+                        <br><br> </p>
+                    <p class="banner_game_cost">$15.96 <span>/</span> <span class="cross_out">&#36;29.99</span></p>
+                    <a href="#">
+                        <button class="banner_game_button">Buy</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
