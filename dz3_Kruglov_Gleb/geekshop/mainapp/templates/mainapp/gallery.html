@@ -1,0 +1,73 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="our_gallery">
+        <p class="section_header">Our Gallery</p>
+        <div class="store">
+            <ul>
+                {% for product in products_1 %}
+                {% if product.url_name in html_names %}
+                <a href="{% url product.url_name %}">
+                {% else %}
+                <a href="#">
+                {% endif %}
+                    <li class="img-div"><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+                        <p>{{ product.name }}
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="store">
+            <ul>
+                {% for product in products_2 %}
+                {% if product.url_name in html_names %}
+                <a href="{% url product.url_name %}">
+                {% else %}
+                <a href="#gallery">
+                {% endif %}
+                    <li class="img-div"><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+                        <p>{{ product.name }}
+                            <br>
+                            <br> </p>
+                        <button>Buy</button>
+                    </li>
+                </a>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="#">
+            <button class="more">Show more games </button>
+        </a>
+    </div>
+    <div class="big_banner">
+        <div class="banner">
+            <div class="banner_text">
+                <p class="banner_game_discount">DISCOUNT</p>
+                <p class="banner_game_name">CALL OF DUTY:
+                    <br>Modern Warfare 3</p>
+                <p class="banner_game_cost">$14.44 <span>/</span> <span class="cross_out">&#36;28.90</span></p>
+                <a href="#">
+                    <button class="banner_game_button">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="banner" id="second_banner">
+            <div class="white_bgd">
+                <div class="banner_text">
+                    <p class="banner_game_discount">DISCOUNT</p>
+                    <p class="banner_game_name">MEDAL OF HONOR
+                        <br><br> </p>
+                    <p class="banner_game_cost">$15.96 <span>/</span> <span class="cross_out">&#36;29.99</span></p>
+                    <a href="#">
+                        <button class="banner_game_button">Buy</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
