@@ -1,0 +1,143 @@
+[
+  {
+    "category": "Shooter games",
+    "name": "BATTLEFIELD 1",
+    "image": "products_images/BATTLEFIELD_1.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "30.00",
+    "quantity": 10
+  },
+  {
+    "category": "Shooter games",
+    "name": "STAR WARS Battlefront II",
+    "image": "products_images/STAR_WARS_Battlefront_II.jpg",
+    "url_name": "", "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "35.00",
+    "quantity": 12
+  },
+  {
+    "category": "Shooter games",
+    "name": "BATTLEFIELD 4",
+    "image": "products_images/BATTLEFIELD_4.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "32.00",
+    "quantity": 17
+  },
+  {
+    "category": "Shooter games",
+    "name": "CALL OF DUTY: Infinite Warface",
+    "image": "products_images/CALL_OF_DUTY_Infinite_Warface.jpg",
+    "url_name": "", "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "29.99", "quantity": 15
+  },
+  {
+    "category": "Simulator games",
+    "name": "WORLD OF TANKS",
+    "image": "products_images/WORLD_OF_TANKS.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "10.00",
+    "quantity": 70
+  },
+  {
+    "category": "Simulator games",
+    "name": "WORLD OF WARSHIPS",
+    "image": "products_images/WORLD_OF_WARSHIPS.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "13.99", "quantity": 37
+  },
+  {
+    "category": "Fighting games",
+    "name": "FOR HONOR",
+    "image": "products_images/FOR_HONOR.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "33.99",
+    "quantity": 28},
+  {
+    "category": "Action-adventure games",
+    "name": "ASSASIN'S CREED: Rogue",
+    "image": "products_images/assasins-creed-rouge.jpg",
+    "url_name": "ac_rouge",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "41.99", "quantity": 42
+  },
+  {
+    "category": "Action-adventure games",
+    "name": "TOMB RAIDER",
+    "image": "products_images/tomb-raider.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "25.99", "quantity": 33
+  },
+  {
+    "category": "Action-adventure games",
+    "name": "RYSE: Son Of Rome",
+    "image": "products_images/ryse-son-of-rome.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "25.99", "quantity": 17
+  },
+  {
+    "category": "MMORPG",
+    "name": "WORLD OF WARCRAFT: Wrath Of The Linch King",
+    "image": "products_images/WoW-Wrath-Of-The-Linch-King.jpg",
+    "url_name": "", "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "42.56",
+    "quantity": 112
+  },
+  {
+    "category": "Stealth games",
+    "name": "DISHONORED 2",
+    "image": "products_images/DISHONORED_2.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "34.99",
+    "quantity": 25
+  },
+  {
+    "category": "Stealth games",
+    "name": "THIEF",
+    "image": "products_images/THIEF.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "37.00",
+    "quantity": 37
+  },
+  {
+    "category": "Stealth games",
+    "name": "HITMAN",
+    "image": "products_images/HITMAN.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "47.00",
+    "quantity": 47
+  },
+  {
+    "category": "Action-RPG",
+    "name": "MIDDLE-EARTH: Shadow Of War",
+    "image": "products_images/MIDDLE_EARTH_Shadow_Of_War.jpg",
+    "url_name": "",
+    "short_desc": "I'm too lazy for do it.",
+    "description": "See the brief description.",
+    "price": "25.00",
+    "quantity": 13
+  }
+]
