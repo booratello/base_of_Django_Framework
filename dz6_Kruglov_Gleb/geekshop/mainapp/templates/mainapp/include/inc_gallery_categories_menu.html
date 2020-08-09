@@ -1,0 +1,12 @@
+<li>
+    <a href="{% url 'gallery:category' 0 %}" class="{% if request.resolver_match.kwargs.pk == 0 %}menu-link active{% else %}menu-link{% endif %}">
+        All
+    </a>
+</li>
+{% for cat in category_menu %}
+<li>
+    <a href="{% url 'gallery:category' cat.pk %}" class="{% if request.resolver_match.kwargs.pk == cat.pk %}menu-link active{% else %}menu-link{% endif %}">
+        {{ cat.name }}
+    </a>
+</li>
+{% endfor %}
