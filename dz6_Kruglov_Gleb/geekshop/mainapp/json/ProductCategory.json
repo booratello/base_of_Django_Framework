@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Shooter games",
+    "description": "Turn off your brain. Shoot and run."
+  },
+  {
+    "name": "Simulator games",
+    "description": "A tank? A warship? A helicopter? A space shuttle? I can drive it all!"
+  },
+  {
+    "name": "Fighting games",
+    "description": "Run! Hack and slash! Blood and mutilation!"
+  },
+  {
+    "name": "Action-adventure games",
+    "description": "You find adventures on your ass and try to save it."
+  },
+  {
+    "name": "MMORPG",
+    "description": "If you are not sociophobe"
+  },
+  {
+    "name": "Stealth games",
+    "description": "I'm behind you right now. Didn't you see me?"
+  },
+  {
+    "name": "Action-RPG",
+    "description": "Shoot and evolve"
+  }
+]
