@@ -1,0 +1,26 @@
+<li><a href="{% url 'main' %}" class="menu-link">Home</a></li>
+<li><a href="{% url 'main' %}#about" class="menu-link">About</a></li>
+<li><a href="{% url 'main' %}#services" class="menu-link">Serices</a></li>
+<li><a href="{% url 'gallery:index' %}" class="menu-link">Gallery</a></li>
+<li><a href="{% url 'main' %}#news" class="menu-link">News</a></li>
+<li><a href="{% url 'main' %}#team" class="menu-link">Team</a></li>
+<li><a href="{% url 'contacts' %}" class="menu-link">Contact Us</a></li>
+ {% if user.is_authenticated %}
+    <li>
+        <a href="{% url 'auth:edit' %}" class="menu-link">
+            {{ user.first_name|default:'User' }}
+        </a>
+    </li>
+{% endif %}
+{% if user.is_superuser %}
+    <li>
+        <a href="{% url 'admin:users' %}" class="menu-link">Admin</a>
+    </li>
+{% endif %}
+<li>
+    {% if user.is_authenticated %}
+        <a href="{% url 'auth:logout' %}" class="menu-link">Logout</a>
+    {% else %}
+        <a href="{% url 'auth:login' %}" class="menu-link">Login</a>
+    {% endif %}
+</li>
