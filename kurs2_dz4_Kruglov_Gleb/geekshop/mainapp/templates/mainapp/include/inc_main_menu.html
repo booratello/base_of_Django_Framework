@@ -1,0 +1,50 @@
+<li><a href="{% url 'main' %}" class="menu-link">Home</a></li>
+<li><a href="{% url 'main' %}#about" class="menu-link">About</a></li>
+<li><a href="{% url 'main' %}#services" class="menu-link">Serices</a></li>
+{% if title != 'gallery' %}
+    <li><a href="{% url 'gallery:index' %}" class="menu-link">Gallery</a></li>
+{% else %}
+    <li><a href="{% url 'main' %}#gallery" class="menu-link">Gallery</a></li>
+{% endif %}
+<li><a href="{% url 'main' %}#news" class="menu-link">News</a></li>
+<li><a href="{% url 'main' %}#team" class="menu-link">Team</a></li>
+{% if title != 'contacts' %}
+    <li><a href="{% url 'contacts' %}" class="menu-link">Contact Us</a></li>
+{% else %}
+    <li><a href="{% url 'main' %}#contact_us" class="menu-link">Contact Us</a></li>
+{% endif %}
+
+{% if user.is_authenticated %}
+    <li>
+        <div class="dropdown">
+            <a class="dropdown-toggle menu-link" href="" data-toggle="dropdown">
+                {{ user.first_name|default:'User' }}
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+               <li>
+                   <a href="{% url 'auth:edit' %}">
+                       Profile
+                   </a>
+               </li>
+               <li>
+                   <a href="{% url 'ordersapp:orders_list' %}">
+                       Orders
+                   </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+{% endif %}
+{% if user.is_superuser %}
+    <li>
+        <a href="{% url 'admin:users' %}" class="menu-link">Admin</a>
+    </li>
+{% endif %}
+<li>
+    {% if user.is_authenticated %}
+        <a href="{% url 'auth:logout' %}" class="menu-link">Logout</a>
+    {% else %}
+        <a href="{% url 'auth:login' %}" class="menu-link">Login</a>
+    {% endif %}
+</li>
