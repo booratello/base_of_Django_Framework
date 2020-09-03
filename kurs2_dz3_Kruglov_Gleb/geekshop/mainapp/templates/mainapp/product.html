@@ -1,0 +1,56 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="about_game">
+        {% if product.name == "ASSASIN'S CREED: Rogue" %}
+        <img src="/static/img/ac_rouge_screen1.jpg" alt="ac_rouge_screen1" class="big_img">
+        <div class="small_imgs">
+            <ul>
+                <li><img src="{% static 'img/ac_rouge_screen1.jpg' %}" alt="ac_rouge_screen1"></li>
+                <li><img src="{% static 'img/ac_rouge_screen2.jpg' %}" alt="ac_rouge_screen2"></li>
+                <li><img src="{% static 'img/ac_rouge_screen3.jpg' %}" alt="ac_rouge_screen3"></li>
+                <li><img src="{% static 'img/ac_rouge_screen4.jpg' %}" alt="ac_rouge_screen4"></li>
+            </ul>
+        </div>
+        {% else %}
+        <img src="/media/{{ product.image }}" alt="{{ product.short_desc }}" class="big_img">
+        <div class="small_imgs">
+            <ul>
+                <li><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}"></li>
+                <li><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}"></li>
+                <li><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}"></li>
+                <li><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}"></li>
+            </ul>
+        </div>
+        {% endif %}
+        <div class="game_info">
+            {% if product.name == "ASSASIN'S CREED: Rogue" %}
+            <div class="game_title">Assasin’s Creed:
+                <br><span>Rogue</span></div>
+            {% else %}
+            <div class="game_title">{{ product.name }}</div>
+            {% endif %}
+            <p class="cost">&#36;{{ product.price }}</p>
+            <a href="{% url 'basket:add' product.pk %}">
+                <button>Buy</button>
+            </a>
+            <p class="about_game_text">{{ product.description }}</p>
+        </div>
+    </div>
+    <div class="similar_games">
+        <p class="section_header">Similar games</p>
+        <div class="store" id="store_product">
+            <ul>
+                {% for product in products %}
+                    <li class="img-div">
+                        <a href="{% url 'gallery:product' product.pk %}" style="text-decoration: none">
+                        <img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+                        <p>{{ product.name }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
