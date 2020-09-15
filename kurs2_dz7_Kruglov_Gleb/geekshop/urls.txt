@@ -1,0 +1,20 @@
+http://192.168.1.199/auth/login/ POST username=django&password=geekbrains
+http://192.168.1.199/
+http://192.168.1.199/gallery/
+http://192.168.1.199/contacts/
+http://192.168.1.199/basket/
+http://192.168.1.199/order/
+http://192.168.1.199/auth/edit/
+http://192.168.1.199/gallery/category/0/
+http://192.168.1.199/gallery/category/1/
+http://192.168.1.199/gallery/category/4/
+http://192.168.1.199/gallery/category/7/
+http://192.168.1.199/gallery/category/8/
+http://192.168.1.199/order/update/1/
+http://192.168.1.199/order/update/7/
+http://192.168.1.199/order/update/8/
+http://192.168.1.199/order/update/9/
+http://192.168.1.199/order/read/3/
+http://192.168.1.199/order/read/7/
+http://192.168.1.199/order/read/8/
+http://192.168.1.199/order/read/11/

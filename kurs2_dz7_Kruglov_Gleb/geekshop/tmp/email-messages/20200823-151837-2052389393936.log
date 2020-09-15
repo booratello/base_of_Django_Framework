@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IGRqYW5nbzU=?=
+From: webmaster@localhost
+To: django5@gb.local
+Date: Sun, 23 Aug 2020 09:18:37 -0000
+Message-ID: <159817431717.12788.2178415125317196066@Xomca.gazprom-neft.local>
+
+Для подтверждения учетной записи django5 на портале http://localhost:8000 перейдите по ссылке:
+http://localhost:8000/auth/verify/django5@gb.local/16e9f99c6d04a598a2a8472aa30a72085d8603ff/
+-------------------------------------------------------------------------------

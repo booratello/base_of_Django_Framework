@@ -1,0 +1,7 @@
+http://192.168.1.175/auth/login/ POST username=django&password=geekbrains
+http://192.168.1.175/gallery/
+http://192.168.1.175/gallery/category/8/
+http://192.168.1.175/order/
+http://192.168.1.175/basket/
+http://192.168.1.175/order/update/7/
+http://192.168.1.175/read/update/7/
