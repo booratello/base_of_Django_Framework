@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IFNvbWVfVXNlcjI=?=
+From: webmaster@localhost
+To: Some_User2@gb.local
+Date: Sun, 23 Aug 2020 09:22:35 -0000
+Message-ID: <159817455564.12788.1912283957383533320@Xomca.gazprom-neft.local>
+
+Для подтверждения учетной записи Some_User2 на портале http://localhost:8000 перейдите по ссылке:
+http://localhost:8000/auth/verify/Some_User2@gb.local/a7ff88be5ee38b5d0dc617c16a867f9f4f81b170/
+-------------------------------------------------------------------------------
